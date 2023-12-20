@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Textures</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+
+        <!-- Sky -->
+        <a-sky src="https://cdn.polyhaven.com/asset_img/primary/snow_02.png?height=760"></a-sky>
+
+        <!-- Ground -->
+        <a-plane id="ground" src="https://cdn.polyhaven.com/asset_img/primary/diagonal_parquet.png?height=760"
+            position="0 0 0" rotation="-90 0 0" width="20" height="10"></a-plane>
+
+        <!-- Carpet -->
+        <a-plane id="carpet" src="https://cdn.polyhaven.com/asset_img/primary/dirty_carpet.png?height=760"
+            position="0 0.1 0.5" rotation="-90 0 0" width="8" height="5"></a-plane>
+
+        <!-- Wall -->
+        <a-box id="wall" src="https://cdn.polyhaven.com/asset_img/primary/wood_floor_worn.png?height=760"
+            position="0 6.5 -4.5" width="20" height="13"></a-box>
+
+        <!-- Wall Posters -->
+        <a-plane id="wall-poster-left"
+            src="https://cdn.pixabay.com/photo/2023/06/11/19/09/fruit-8056663_640.jpg" position="-5 6 -3.3"
+            rotation="0 0 0" width="4" height="6"></a-plane>
+        <a-plane id="wall-poster-middle"
+            src="https://cdn.pixabay.com/photo/2023/11/23/09/01/pineapple-8407451_640.jpg" position="0 6 -3.3"
+            rotation="0 0 0" width="4" height="6"></a-plane>
+        <a-plane id="wall-poster-right"
+            src="https://th.bing.com/th/id/OIP.J8Ywe2fMRIu4Zz1OKhhJIgHaKs?w=202&h=291&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+            position="5 6 -3.3" rotation="0 0 0" width="4" height="6"></a-plane>
+
+        <!-- Chairs -->
+        <a-cylinder id="chair-1" radius="1.2" position="6.5 -0.4 0" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760">
+            <!-- Chair Parts -->
+            <a-cylinder radius="0.2" position="0 1 0" height="1.2" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760"></a-cylinder>
+            <a-cylinder position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760"></a-cylinder>
+            <a-cylinder position="0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760"></a-cylinder>
+        </a-cylinder>
+
+        <a-cylinder id="chair-2" radius="1.2" position="-6.5 -0.4 0" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760">
+            <!-- Chair Parts -->
+            <a-cylinder radius="0.2" position="0 1 0" height="1.2" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760"></a-cylinder>
+            <a-cylinder position="0 1.9 0" rotation="0 0 0" radius="1.3" height="0.2" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760"></a-cylinder>
+            <a-cylinder position="-0.85 3 0" rotation="90 -90 0" radius="1.3" height="0.2" src="https://cdn.polyhaven.com/asset_img/primary/painted_concrete.png?height=760"></a-cylinder>
+        </a-cylinder>
+
+        <!-- Dining Table -->
+        <a-box width="9" height="3.5" position="0 2 0" rotation="90 0 0" depth="0.2"
+            src="https://cdn.polyhaven.com/asset_img/primary/scuffed_cement.png?height=760">
+            <a-cylinder height="2" radius="0.8" rotation="90 0 0" position="0 0 1"></a-cylinder>
+        </a-box>
+
+        <!-- Camera -->
+        <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"></a-camera>
+
+    </a-scene>
+</body>
+</html>
